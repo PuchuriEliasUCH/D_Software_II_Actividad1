@@ -12,27 +12,19 @@
     <form id="form1">
         <h2>Resultado - Ejercicio 4</h2>
         <ul>
-            
-        
-        <%
-            string val = Request.Form["nValue"];
-            int nValue = int.Parse(val);
-            if (nValue > 0)
-            {
-                Response.Write($"<p>Número ingresado (n): <strong>{nValue}</strong></p>");
-
-                for (int i = 0; i <= nValue; i++) {
-                    Response.Write($"<li>{i} * 5 = {i * 5}</li>");
+            <%
+                string val = Request.Form["nValue"];
+                int nValue = int.Parse(val);
+                if (nValue > 0) {
+                    Response.Write($"<p>Número ingresado (n): <strong>{nValue}</strong></p>");
+                    for (int i = 0; i <= nValue; i++) {
+                        Response.Write($"<li>{i} * 5 = {i * 5}</li>");
+                    }
+                } else {
+                    Response.Write("<p style='color:red'>Por favor ingresa un número válido.</p>");
                 }
-
-            }
-            else
-            {
-                Response.Write("<p style='color:red'>Por favor ingresa un número válido.</p>");
-            }
-        %>
-
-            </ul>
+            %>
+        </ul>
         <br />
         <a href="Formulario.aspx">Volver</a>
     </form>

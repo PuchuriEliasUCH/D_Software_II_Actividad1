@@ -70,6 +70,8 @@
     <Content Include="Ejercicio1\Formulario.aspx" />
     <Content Include="Ejercicio1\Resultado.aspx" />
     <Content Include="Ejercicio1\style.css" />
+    <Content Include="Ejercicio2\Ejercicio2.aspx" />
+    <Content Include="Ejercicio2\estilos.css" />
     <Content Include="Ejercicio3\Ejercicio3.aspx" />
     <Content Include="Ejercicio3\Ejercicio3Respuesta.aspx" />
     <Content Include="Ejercicio3\estilos.css" />
@@ -93,6 +95,13 @@
     </Compile>
     <Compile Include="Ejercicio1\Resultado.aspx.designer.cs">
       <DependentUpon>Resultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio2\Ejercicio2.aspx.cs">
+      <DependentUpon>Ejercicio2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio2\Ejercicio2.aspx.designer.cs">
+      <DependentUpon>Ejercicio2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ejercicio3\Ejercicio3.aspx.cs">
       <DependentUpon>Ejercicio3.aspx</DependentUpon>
@@ -133,9 +142,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ejercicio2\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
