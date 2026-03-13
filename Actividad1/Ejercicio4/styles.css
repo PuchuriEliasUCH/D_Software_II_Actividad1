@@ -1,0 +1,72 @@
+﻿/* Fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+form {
+    width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Texto del número ingresado */
+p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Lista de resultados */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Cada resultado */
+li {
+    background: #f4f6f9;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    border-left: 5px solid #0078d7;
+    transition: 0.2s;
+}
+
+    /* Efecto al pasar el mouse */
+    li:hover {
+        background: #e8f2ff;
+        transform: scale(1.02);
+    }
+
+/* Link volver */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    text-decoration: none;
+    background: #0078d7;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #005fa3;
+}
