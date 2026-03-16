@@ -1,15 +1,16 @@
-﻿/* Fondo general */
-body {
+﻿body {
     font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
     background: linear-gradient(135deg, #4facfe, #00f2fe);
     margin: 0;
     padding: 0;
 }
 
-/* Contenedor principal */
 form {
     width: 450px;
-    margin: 80px auto;
+    position: relative;
+    top: calc(50vh - 110px);
+    margin: 0 auto;
     padding: 30px;
     background: white;
     border-radius: 12px;
@@ -17,27 +18,23 @@ form {
     text-align: center;
 }
 
-/* Título */
 h2 {
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Texto del número ingresado */
 p {
     font-size: 18px;
     color: #444;
     margin-bottom: 15px;
 }
 
-/* Lista de resultados */
 ul {
     list-style: none;
     padding: 0;
     margin: 20px 0;
 }
 
-/* Cada resultado */
 li {
     background: #f4f6f9;
     margin: 8px 0;
@@ -48,25 +45,45 @@ li {
     transition: 0.2s;
 }
 
-    /* Efecto al pasar el mouse */
     li:hover {
         background: #e8f2ff;
         transform: scale(1.02);
     }
 
-/* Link volver */
-a {
-    display: inline-block;
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin-top: 15px;
+}
+
+input[type=submit] {
+    padding: 8px 18px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    input[type=submit]:hover {
+        background: #005fa3;
+    }
+
+a {
     padding: 8px 18px;
     text-decoration: none;
     background: #0078d7;
     color: white;
     border-radius: 6px;
+    font-size: 14px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-a:hover {
-    background: #005fa3;
-}
+    a:hover {
+        background: #005fa3;
+    }

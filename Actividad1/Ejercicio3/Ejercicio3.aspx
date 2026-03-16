@@ -14,6 +14,7 @@
         Número (n): <input type="number" name="n" min="1" required />
         <br /><br />
         <input type="submit" value="Calcular" />
+        <a href="../index.html">← Volver al menú</a>
     </form>
 </body>
 </html>

@@ -10,21 +10,18 @@
 </head>
 <body>
     <form id="form1" runat="server" class="contenedor">
+        <h2>Ejercicio 2</h2>
         Número inicial:
         <asp:TextBox ID="txtNi" runat="server"></asp:TextBox>
         <br/><br/>
-
         Número final:
         <asp:TextBox ID="txtNf" runat="server"></asp:TextBox>
         <br/><br/>
-
-        <asp:Button ID="btnCalcular" runat="server" Text="Calcular"
-            OnClick="btnCalcular_Click" />
-
+        <asp:Button ID="btnCalcular" runat="server" Text="Calcular" OnClick="btnCalcular_Click" />
         <br/><br/>
-
-        Cantidad de pares:
-        <asp:Label ID="lblResultado" runat="server"></asp:Label>
+        <a href="../index.html">← Volver al menú</a>
+        <br/>
+        Cantidad de pares: <asp:Label ID="lblResultado" runat="server"></asp:Label>
     </form>
 </body>
 </html>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .head {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+            .head h1 {
+                font-size: 20px;
+                font-weight: 500;
+                color: #222;
+                margin-bottom: 4px;
+            }
+
+            .head p {
+                font-size: 13px;
+                color: #888;
+            }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            width: 440px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px 24px;
+            text-decoration: none;
+            display: block;
+            transition: border-color 0.15s, background 0.15s;
+        }
+
+            .card:hover {
+                border-color: #aaa;
+                background: #fafafa;
+            }
+
+        .num {
+            font-size: 11px;
+            color: #aaa;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .desc {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head">
+            <h1>Actividad 1</h1>
+            <p>Método GET — Semana 1</p>
+        </div>
+        <div class="grid">
+            <a class="card" href="Ejercicio1/Formulario.aspx">
+                <p class="num">Ejercicio 1</p>
+                <p class="title">Suma de naturales</p>
+                <p class="desc">Suma de los primeros N números naturales</p>
+            </a>
+            <a class="card" href="Ejercicio2/Ejercicio2.aspx">
+                <p class="num">Ejercicio 2</p>
+                <p class="title">Pares en un rango</p>
+                <p class="desc">Cantidad de pares entre ni y nf</p>
+            </a>
+            <a class="card" href="Ejercicio3/Ejercicio3.aspx">
+                <p class="num">Ejercicio 3</p>
+                <p class="title">Suma pares e impares</p>
+                <p class="desc">Suma separada hasta N</p>
+            </a>
+            <a class="card" href="Ejercicio4/Formulario.aspx">
+                <p class="num">Ejercicio 4</p>
+                <p class="title">Múltiplos de 5</p>
+                <p class="desc">Cantidad de múltiplos de 5 hasta N</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

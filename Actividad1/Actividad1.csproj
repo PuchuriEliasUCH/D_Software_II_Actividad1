@@ -78,6 +78,7 @@
     <Content Include="Ejercicio4\Formulario.aspx" />
     <Content Include="Ejercicio4\Resultado.aspx" />
     <Content Include="Ejercicio4\styles.css" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

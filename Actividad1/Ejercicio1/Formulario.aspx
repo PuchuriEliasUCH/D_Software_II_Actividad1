@@ -9,12 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <h2>Formulario</h2>
-    <p>Ingrese un número para sumar los primeros N números naturales</p>
     <form method="get" action="Resultado.aspx">
+        <h2>Formulario</h2>
+        <p>Ingrese un número para sumar los primeros N números naturales</p>
         <input type="number" name="n"/>
         <br />
         <input type="submit" value="Calcular"/>
+        <a href="../index.html">← Volver al menú</a>
     </form>
 </body>
 </html>
