@@ -6,17 +6,29 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Ejercicio 4</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="<%= ResolveUrl("./styles.css") %>" />
 </head>
 <body>
-    <form id="form1" method="post" action="./Resultado.aspx">
-        <h2>Ejercicio 4 - N múltiplos de 5</h2>
-        Número (n): <input type="number" name="nValue" min="1" required />
-        <br /><br />
-        <div class="botones">
-            <input type="submit" value="Calcular" />
-            <a href="../index.html">← Volver al menú</a>
-        </div>
-    </form>
+    <div class="layout">
+    
+    <div class="col-izquierda">
+        <form id="form1" runat="server">
+            <h2>Ejercicio 4 - N múltiplos de 5</h2>
+            Número (n):
+            <asp:TextBox runat="server" type="number" ID="nValue" min="1" required />
+            
+            <div class="botones">
+                <asp:Button runat="server" Text="Calcular" OnClick="Calc"/>
+                <asp:HyperLink runat="server" href="../index.html">← Volver al menú</asp:HyperLink>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-derecha">
+        <h2>Resultado</h2>
+        <ul runat="server" id="listado"></ul>
+    </div>
+
+</div>
 </body>
 </html>

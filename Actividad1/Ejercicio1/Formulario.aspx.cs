@@ -13,5 +13,15 @@ namespace Actividad1.Ejercicio1
         {
 
         }
+        protected void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int n;
+
+            if (int.TryParse(txtNumero.Text, out n) && n >= 1)
+            {
+                Response.Redirect("Resultado.aspx?n=" + n);
+            }
+        }
+
     }
 }

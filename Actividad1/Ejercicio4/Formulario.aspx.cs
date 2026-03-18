@@ -13,5 +13,25 @@ namespace Actividad1.Ejercicio4
         {
 
         }
+
+        protected void Calc(object sender, EventArgs e)
+        {
+            int val = int.Parse(nValue.Text);
+            if (val > 0)
+            {
+                listado.InnerText = $"Número ingresado (n): {val}";
+                for (int i = 0; i <= val; i++)
+                {
+                    listado.Controls.Add(new Literal
+                    {
+                        Text = $"<li>{i} * 5 = {i * 5}</li>"
+                    });
+                }
+            }
+            else
+            {
+                listado.InnerText = "<p style='color:red'>Por favor ingresa un número válido.</p>";
+            }
+        }
     }
 }
